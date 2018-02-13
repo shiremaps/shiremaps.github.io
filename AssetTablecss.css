@@ -1,0 +1,273 @@
+.wholepage {
+    width:100%;
+}
+
+.leftside {
+    float:left;
+    width:50%;
+}
+
+.rightside{
+    float:left;
+    width: 48%;
+    outline:solid;
+    height: 1000px;
+    padding: 5px;
+    background: azure;
+}
+
+/*table Surrounding Div styling */
+
+.tableArea {
+    height: 350px;  
+    overflow-y: auto;
+    overflow-x: hidden; 
+    width:100%;
+    max-width: 100%;
+}
+
+
+
+/*Table styling */
+
+#assetTableResults {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 100%;
+    background: white;
+}
+
+#assetTableResults tbody {  
+    table-layout: fixed;
+}
+
+
+
+#assetTableResults td {
+
+    padding-left: 5px;
+    padding-top: 3px;
+    border: 1px solid #ddd;
+    font-size: 8.5pt;
+    font-family: "Verdana", Arial, Helvetica, sans-serif;
+    white-space: normal !important;
+}
+
+
+/*this hides the unitsServedList field*/
+#assetTableResults .dontshowme {
+    display: none;
+}
+
+
+#assetTableResults tr:nth-child(even){background-color: #f2f2f2;}
+
+#assetTableResults tr:hover {background-color: #ddd;}
+
+#assetTableResults th {
+    position: sticky;
+    top:0;
+    padding-top: 3px !important;
+    padding-bottom: 3px !important;
+    padding-left: 5px;
+    padding-right: 6px;
+    font-size: 9pt !important;
+    text-align: left;
+    background-color: lightsteelblue;  /*#b4b4b4;*/
+    color: black;
+    float:none !important;
+    border: 1px solid grey !important;
+    font-family: "Verdana", Arial, Helvetica, sans-serif !important;
+    font-weight: lighter;
+    text-transform: uppercase;
+}
+
+#assetTableResults td:first-child {
+  font-weight: bold
+}
+
+#assetTableResults td a:hover { 
+     background-color: yellow;
+     cursor: pointer;
+} 
+
+.tableEditRow {
+    background-color: lightyellow !important;
+}
+
+/*
+.editpencilchar {
+    font-size: 1.5em;
+}
+*/
+
+[contenteditable="true"] {
+/*  font-family: "Rajdhani";*/
+  color: blue;
+    font-weight: bold;
+    border: green;
+    border-style: solid;
+}
+
+.fa.fa-floppy-o {
+    display: none;
+}
+
+/*End table styling */
+
+
+
+
+
+/*start form styling */
+
+
+
+.inputDiv p {
+    margin: 4px;
+}
+
+
+.inputDiv select,.inputDiv input {  /*input[type=text],[type=number],*/
+/*    width: ;*/
+    height: 40px !important;
+    padding: 8px 8px;
+    margin: 4px 0 !important;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    color: #8e8e8e;
+    display:block;
+}
+/*the width of all the inputs is controlled below*/
+.assetInput {
+    width: 85%;
+}
+
+.inputDiv {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    display:none;
+}
+
+
+.update-row {
+    display: none;
+}
+
+.copy-rows {
+    display: none;
+}
+
+.error {
+    background-color: pink;
+}
+
+.inputDiv input:not([type=button]):disabled {
+    visibility: hidden;
+}
+
+.inputDiv select:disabled {
+    visibility: hidden;
+}
+/*END start form styling */
+
+
+
+
+
+
+
+
+
+/* The Edit/Add Modal Styling*/
+
+/* The Modal (background) */
+.mymodal {
+/*    display: none;  Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    
+}
+
+/*my modal class is called bluedog--dont ask me why! */
+
+.bluedog {
+/*    position: relative;*/
+    background-color: #fefefe;
+    /*background-color: cornflowerblue; */
+    margin: 10% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    border-radius: 15px;
+    width: 50%; /* Could be more or less, depending on screen size */    
+}
+
+/* END   The Edit/Add Modal Styling*/
+
+
+
+/* Button styling */
+
+
+/* The Close Button */
+ .cancel-edit {
+     position:relative;
+     display: block;
+     color: #aaa;
+     float: right;
+     top: 0px;
+     font-size: 28px;
+     font-weight: bold;
+     padding: 0;
+     border: none;
+     background: none;
+     height: 30px;
+}
+
+ .cancel-edit:hover,
+ .cancel-edit:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+} 
+
+.atbutton {
+    background-color: #4dd2ff !important; /* Green */
+    border: none;
+    color: white;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+
+.atbutton:hover {
+    background-color: #ccf2ff !important;
+    color: white;
+}
+
+
+
+/* End Button styling */
+
+
+
+
+
